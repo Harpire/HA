@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoe Sales - Mander Inc Pvt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeded;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 40px; /* Increased padding for a squarer appearance */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Adjusted width for a squarer appearance */
+            margin: auto;
+        }
+        h2 {
+            color: #131921;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #131921;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #f0c14b;
+            border-color: #a88734;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid #a88734;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #e7ba4b;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="mailto:example@example.com">
+        <h2>Shoe Order Form</h2>
+        <!-- Customer Information -->
+        <label for="custName">Name:</label>
+        <input type="text" id="custName" name="custName"><br>
+
+        <label for="custEmail">Email:</label>
+        <input type="email" id="custEmail" name="custEmail"><br>
+
+        <!-- Shoe Specifications -->
+        <label for="shoeBrand">Shoe Brand:</label>
+        <select id="shoeBrand" name="shoeBrand">
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="puma">Puma</option>
+            <!-- More brands can be added here -->
+        </select><br>
+
+        <label for="shoeSize">Shoe Size:</label>
+        <input type="number" id="shoeSize" name="shoeSize" min="5" max="12"><br>
+
+        <label for="shoeColor">Color:</label>
+        <input type="text" id="shoeColor" name="shoeColor"><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1"><br>
+
+        <label for="deliveryDate">Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate"><br>
+
+        <!-- Additional Options -->
+        <label for="specialRequests">Special Requests:</label>
+        <textarea id="specialRequests" name="specialRequests"></textarea><br>
+
+        <!-- Payment Information -->
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod">
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bankTransfer">Bank Transfer</option>
+        </select><br>
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
